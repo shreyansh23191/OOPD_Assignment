@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <iomanip>
 
 using namespace std;
 
@@ -40,6 +41,7 @@ int main() {
         } else {
             cerr << "Failed to parse line: " << line << endl;
         }
+        cout<<fixed<<setprecision(2);
         cout << "Year: " << fileYear << " - Money actually received: " << amount1 << " - Value of money actually received: " << amount2 << std::endl;
     
 
