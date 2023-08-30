@@ -32,8 +32,18 @@ int main() {
                 amount = amount1;
                 
 
-            }
+                amount3 = amount2 * (1 + (interestRate - inflationRate) / 100);
+                amount2 = amount3;
+
+                }
+                
+        } else {
+            cerr << "Failed to parse line: " << line << endl;
         }
+
+    }
+            
+
     Myfile.close();
 
     return 0;
