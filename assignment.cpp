@@ -5,7 +5,7 @@
 
 using namespace std;
 int main() {
-    ifstream Myfile("india_data.csv");
+    ifstream Myfile("spain_data.csv");
     if (!Myfile.is_open()) {
         cerr << "Failed to open the Myfile." << endl;
         return 1;
