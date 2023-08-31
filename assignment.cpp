@@ -33,7 +33,7 @@ int main() {
         
         if (iss >> serialnum >> comma >> fileYear >> comma >> interestRate >> comma >> inflationRate) {
             if (fileYear < 1978){ 
-                amount3 = (amount3 * (1 + (interestRate - inflationRate) / 100))/18;
+                amount3 = (amount3 * (1 + (interestRate - inflationRate) / 100));
             }
             if (fileYear >= 1978){
                 amount4 = amount4 * ((1 + (interestRate - inflationRate) / 100));
@@ -54,8 +54,8 @@ int main() {
     }
     cout<<fixed<<setprecision(2);
     cout << "Year: " << fileYear << " - Money received: " << amount1 << " - Value of money received: " << amount2 << std::endl;
-    if(amount3<amount4){
-        cout<<"Dictatorship wins";
+    if(amount3/18<amount4/45){
+        cout<<"Growth in monarchy era was high as compared to dictatorial era";
             }   
 
     Myfile.close();
